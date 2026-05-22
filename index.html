@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walkmar Produções — Portfólio de Projetos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <div class="sec-header">
+    <div>
+      <div class="eyebrow">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-text">Portfólio Completo</span>
+      </div>
+      <h2 class="sec-title">Nossos<br><span>Projetos</span></h2>
+    </div>
+    <div class="header-right">
+      <p>Projetos culturais aprovados via Lei Rouanet e ProAc, realizados em todo o território nacional.</p>
+      <div class="counter">
+        <span class="cur" id="curN">01</span>
+        <span id="totN"> / 14</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ACTION BAR ── -->
+  <div class="action-bar">
+    <div class="filters">
+      <button class="f-btn on" data-f="todos"   onclick="setF('todos',this)">  <span class="pip"></span>Todos</button>
+      <button class="f-btn"    data-f="rouanet" onclick="setF('rouanet',this)"><span class="pip"></span>Lei Rouanet</button>
+      <button class="f-btn"    data-f="proac"   onclick="setF('proac',this)">  <span class="pip"></span>ProAc</button>
+      <button class="f-btn"    data-f="videos"  onclick="setF('videos',this)"><span class="pip"></span>Vídeos</button>
+    </div>
+    <div class="action-btns">
+      <a href="/portfolio-walkmar-2026.pptx" download class="btn-download">
+        ⬇ Baixar Portfólio
+      </a>
+      <a href="https://www.walkmar.com.br" target="_blank" rel="noopener" class="btn-site">
+        Saiba Mais
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── CAROUSEL ── -->
+  <div class="car-shell">
+    <div class="car-inner">
+      <div class="car-track" id="track"></div>
+    </div>
+    <div class="empty" id="empty">Nenhum projeto para este filtro.</div>
+  </div>
+
+  <!-- ── GRADE DE VÍDEOS ── -->
+  <div class="video-grid-wrap" id="videoGridWrap" style="display:none">
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+
+  <!-- ── CONTROLES ── -->
+  <div class="controls">
+    <div class="dots" id="dots"></div>
+    <div class="ctrl-right">
+      <div class="prog-wrap"><div class="prog-fill" id="prog"></div></div>
+      <div class="nav-btns">
+        <button class="nav-btn" id="btnP" aria-label="Anterior">&#8249;</button>
+        <button class="nav-btn" id="btnN" aria-label="Próximo">&#8250;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BARRA DE IMPACTO ── -->
+  <div class="impact-bar">
+    <div class="imp-stats">
+      <div>
+        <div class="imp-val" id="statN">14</div>
+        <div class="imp-label">Projetos no portfólio</div>
+      </div>
+      <div>
+        <div class="imp-val">+120K</div>
+        <div class="imp-label">Pessoas impactadas</div>
+      </div>
+      <div>
+        <div class="imp-val">R$15M+</div>
+        <div class="imp-label">Em projetos culturais</div>
+      </div>
+    </div>
+    <div class="ap-ind">
+      <div class="ap-dot"></div>
+      Autoplay ativo
+    </div>
+  </div>
+
+  <!-- ── MODAL ── -->
+  <div class="modal-ov" id="mOv" onclick="closeM(event)">
+    <button class="m-nav m-nav-p" onclick="modalPrev()" aria-label="Projeto anterior">&#8249;</button>
+    <button class="m-nav m-nav-n" onclick="modalNext()" aria-label="Próximo projeto">&#8250;</button>
+    <div class="modal" id="mBox">
+
+      <!-- Hero com galeria -->
+      <div class="m-hero" id="mHero">
+        <div class="m-hero-bg" id="mBg"></div>
+        <img class="m-hero-img" id="mImg" src="" alt="" />
+        <div class="m-hero-grad"></div>
+        <div class="m-hero-txt">
+          <div class="m-lei-tag" id="mLei"></div>
+          <div class="m-title" id="mTitle"></div>
+          <div class="m-pronac" id="mPronac"></div>
+        </div>
+        <button class="m-close" onclick="closeModal()">&#10005;</button>
+      </div>
+
+      <!-- Thumbs -->
+      <div class="m-thumbs" id="mThumbs"></div>
+
+      <!-- Corpo -->
+      <div class="m-body">
+        <div class="m-stats" id="mStats"></div>
+
+        <div class="m-sec">Sobre o Projeto</div>
+        <div class="m-desc" id="mDesc"></div>
+        <div class="m-tags" id="mTags"></div>
+
+        <div class="m-sec">Cotas de Investimento</div>
+        <div class="m-cotas" id="mCotas"></div>
+
+        <div class="m-actions">
+          <button class="m-btn-p" onclick="closeModal()">Quero ser Patrocinador →</button>
+          <button class="m-btn-s" onclick="closeModal()">Fechar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
