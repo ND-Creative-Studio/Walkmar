@@ -5,19 +5,15 @@
 import { PROJETOS, getRouanet, getProAc, getVideos } from './projetos.js';
 
 // ── Estado ──────────────────────────────────────────────────
-let shown  = [...PROJETOS];
-let filt   = 'todos';
-let idx    = 0;
-let paused = false;
-let timer  = null;
-const MS   = 4200;
+let shown = [...PROJETOS];
+let filt  = 'todos';
+let idx   = 0;
 
 // ── Elementos ────────────────────────────────────────────────
 const trackEl = document.getElementById('track');
 const dotsEl  = document.getElementById('dots');
 const curEl   = document.getElementById('curN');
 const totEl   = document.getElementById('totN');
-const progEl  = document.getElementById('prog');
 const emptyEl = document.getElementById('empty');
 const statN   = document.getElementById('statN');
 
@@ -123,7 +119,6 @@ function goTo(i) {
   if (!t) return;
   idx = ((i % t) + t) % t;
   pos();
-  resetP();
 }
 function next() { goTo(idx + 1); }
 function prev() { goTo(idx - 1); }
@@ -152,23 +147,6 @@ shell.addEventListener('touchend',   e => {
   const dx = e.changedTouches[0].clientX - tx;
   if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
 });
-shell.addEventListener('mouseenter', () => { paused = true;  });
-shell.addEventListener('mouseleave', () => { paused = false; });
-
-// ════════════════════════════════════════════════════════════
-// AUTOPLAY + PROGRESS BAR
-// ════════════════════════════════════════════════════════════
-function resetP() {
-  clearInterval(timer);
-  progEl.style.transition = 'none';
-  progEl.style.width = '0%';
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    progEl.style.transition = `width ${MS}ms linear`;
-    progEl.style.width = '100%';
-  }));
-  timer = setInterval(() => { if (!paused && shown.length) next(); }, MS);
-}
-
 // ════════════════════════════════════════════════════════════
 // FILTRO
 // ════════════════════════════════════════════════════════════
@@ -186,7 +164,6 @@ window.setF = function(f, btn) {
 
   shown = f === 'todos' ? [...PROJETOS] : f === 'rouanet' ? getRouanet() : getProAc();
   render();
-  resetP();
 };
 
 // ════════════════════════════════════════════════════════════
@@ -202,7 +179,6 @@ function _setupModal(p) {
   if (existingIframe) existingIframe.remove();
 
   activeProject = p;
-  paused = true;
   activeThumb = 0;
 
   const isProac = p.lei === 'proac';
@@ -317,7 +293,6 @@ window.closeModal = function() {
   }
   document.getElementById('mOv').classList.remove('open');
   document.body.style.overflow = '';
-  paused = false;
 };
 
 window.closeM = function(e) {
@@ -369,4 +344,3 @@ window.openVideoModal = function(projetoId) {
 
 // ── Init ─────────────────────────────────────────────────────
 render();
-resetP();
