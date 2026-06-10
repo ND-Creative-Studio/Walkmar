@@ -194,8 +194,7 @@ function _setupModal(p) {
 
   document.getElementById('mStats').innerHTML = `
     <div class="m-stat"><div class="m-stat-val">${p.valor}</div><div class="m-stat-label">Valor do projeto</div></div>
-    <div class="m-stat"><div class="m-stat-val">${p.impacto}</div><div class="m-stat-label">Impacto direto</div></div>
-    <div class="m-stat"><div class="m-stat-val">${p.cotas.length}</div><div class="m-stat-label">Cotas disponíveis</div></div>`;
+    <div class="m-stat"><div class="m-stat-val">${p.impacto}</div><div class="m-stat-label">Impacto direto</div></div>`;
 
   setHeroPhoto(p.fotos[0] || null, p.bg);
 

@@ -14,9 +14,9 @@ export const PROJETOS = [
     tema: 'Brinquedoteca · Primeira Infância',
     publico: 'Crianças de 0 a 6 anos',
     local: 'Todo o território nacional',
-    valor: 'R$ 1.177.950,40',
+    valor: 'R$ 1.199.140,80',
     impacto: '30.000 crianças',
-    title: 'Bebeteca 2 — Passinhos para o Futuro',
+    title: 'Bebeteca - Passinhos para o Futuro! 2ª edição',
     bg: '#1A5C4A',
     desc: 'Cria brinquedotecas com estruturas físicas e doação de acervo infantil — livros, brinquedos educativos e tapetes EVA. Cada espaço recebe pintura artística em uma parede. Realiza contação de histórias em escolas, creches, hospitais e centros culturais de forma gratuita, promovendo a literatura para a primeira infância.',
     fotos: [
@@ -130,10 +130,9 @@ export const PROJETOS = [
     bg: '#7c2d12',
     desc: '10 turmas de 30 alunos aprendendo percussão, bombo e caixa de guerra. 24 encontros de 90 minutos, com apresentações públicas e desfiles de rua. Instrumentos doados às escolas ao final — garantindo continuidade do projeto.',
     fotos: [
-      'fotos/fanfarra/foto_01.jpg',  'fotos/fanfarra/foto_02.webp',
-      'fotos/fanfarra/foto_03.png',  'fotos/fanfarra/foto_04.png',
-      'fotos/fanfarra/foto_05.png',  'fotos/fanfarra/foto_06.jpg',
-      'fotos/fanfarra/foto_07.png',
+      'fotos/fanfarra/image4.png',  'fotos/fanfarra/image13.png',
+      'fotos/fanfarra/image15.png', 'fotos/fanfarra/image16.png',
+      'fotos/fanfarra/image17.png', 'fotos/fanfarra/image18.png',
     ],
     video: 'JBn6bhndkFo',
     cotas: [
