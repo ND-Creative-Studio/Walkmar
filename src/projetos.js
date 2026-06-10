@@ -73,11 +73,9 @@ export const PROJETOS = [
     bg: '#1e1b4b',
     desc: '10 turmas de 30 participantes formados em interpretação cênica em Libras. 24 encontros de 2h, artistas surdos convidados, glossário online gratuito e apresentações públicas acessíveis.',
     fotos: [
-      'fotos/cena-libras/foto_01.jpg',  'fotos/cena-libras/foto_02.png',
-      'fotos/cena-libras/foto_03.jpg',  'fotos/cena-libras/foto_04.png',
-      'fotos/cena-libras/foto_05.jpg',  'fotos/cena-libras/foto_06.jpg',
-      'fotos/cena-libras/foto_07.jpg',  'fotos/cena-libras/foto_08.jpg',
-      'fotos/cena-libras/foto_09.jpg',  'fotos/cena-libras/foto_10.png',
+      'fotos/cena-libras/image18.png', 'fotos/cena-libras/image9.png',
+      'fotos/cena-libras/image16.png', 'fotos/cena-libras/image22.png',
+      'fotos/cena-libras/image23.png', 'fotos/cena-libras/image24.png',
     ],
     video: 'En6EWx742FE',
     cotas: [
@@ -101,11 +99,8 @@ export const PROJETOS = [
     bg: '#9c0f2e',
     desc: 'Implanta estruturas educativas permanentes com biblioteca infantil, Smart TV 50\'\', DVD player, 50 filmes infantis e 60 livros (incluindo títulos em braile). Realiza contações de histórias com intérprete de Libras em todas as ações, democratizando o acesso à leitura e ao audiovisual para crianças em vulnerabilidade social.',
     fotos: [
-      'fotos/cinelivro/foto_01.jpg', 'fotos/cinelivro/foto_02.jpg',
-      'fotos/cinelivro/foto_03.jpg', 'fotos/cinelivro/foto_04.jpg',
-      'fotos/cinelivro/foto_05.jpg', 'fotos/cinelivro/foto_06.jpg',
-      'fotos/cinelivro/foto_07.jpg', 'fotos/cinelivro/foto_08.jpg',
-      'fotos/cinelivro/foto_09.jpg', 'fotos/cinelivro/foto_10.jpg',
+      'fotos/cinelivro/image14.png', 'fotos/cinelivro/image10.jpeg',
+      'fotos/cinelivro/image12.png', 'fotos/cinelivro/image16.png',
     ],
     video: 'K5-XypqlK9c',
     cotas: [
@@ -152,7 +147,7 @@ export const PROJETOS = [
     local: 'Todo o território nacional',
     valor: 'R$ 405.820,00',
     impacto: '400 adolescentes',
-    title: 'Pintaê! — Jovens Artistas · Sonhos nas Paredes',
+    title: 'Pintâe - Artistas do Futuro',
     bg: '#3d1a00',
     desc: '80 oficinas gratuitas — 40 de pintura em ecobag e 40 de muralismo colaborativo — com a arte-educadora Lais Laclio. Cada mural representa a identidade cultural do município. Catálogo digital ao final.',
     fotos: [
@@ -211,14 +206,8 @@ export const PROJETOS = [
     bg: '#c07e00',
     desc: 'Oficinas de escrita criativa de 6 meses. Turmas de até 35 alunos criam personagens, enredos e cenários. Ao final, é publicado um livro coletivo com os textos e realizado um evento de lançamento com sessão de autógrafos.',
     fotos: [
-      'fotos/meu-primeiro-livro/foto_01.jpg',  'fotos/meu-primeiro-livro/foto_02.png',
-      'fotos/meu-primeiro-livro/foto_03.webp', 'fotos/meu-primeiro-livro/foto_04.jpg',
-      'fotos/meu-primeiro-livro/foto_05.webp', 'fotos/meu-primeiro-livro/foto_06.jpg',
-      'fotos/meu-primeiro-livro/foto_07.webp', 'fotos/meu-primeiro-livro/foto_08.webp',
-      'fotos/meu-primeiro-livro/foto_09.jpg',  'fotos/meu-primeiro-livro/foto_10.jpg',
-      'fotos/meu-primeiro-livro/foto_11.png',  'fotos/meu-primeiro-livro/foto_12.jpg',
-      'fotos/meu-primeiro-livro/foto_13.png',  'fotos/meu-primeiro-livro/foto_14.png',
-      'fotos/meu-primeiro-livro/foto_15.jpg',  'fotos/meu-primeiro-livro/foto_16.png',
+      'fotos/meu-primeiro-livro/image9.png',  'fotos/meu-primeiro-livro/image19.png',
+      'fotos/meu-primeiro-livro/image21.png', 'fotos/meu-primeiro-livro/image23.png',
     ],
     video: 'dBjb4SUhRkU',
     cotas: [
@@ -241,11 +230,9 @@ export const PROJETOS = [
     bg: '#1e1b4b',
     desc: 'Experiência imersiva única: teatro ao vivo + cinema fulldome 360° dentro de um domo inflável (a "nave URÂNIA"). Os personagens Zelar, Lumia e o Capitão Gaia guiam as crianças por uma jornada sobre crise climática e desmatamento.',
     fotos: [
-      'fotos/missao-terra/foto_01.png', 'fotos/missao-terra/foto_02.png',
-      'fotos/missao-terra/foto_03.png', 'fotos/missao-terra/foto_04.png',
-      'fotos/missao-terra/foto_05.png', 'fotos/missao-terra/foto_06.png',
-      'fotos/missao-terra/foto_07.png', 'fotos/missao-terra/foto_08.png',
-      'fotos/missao-terra/foto_09.jpg', 'fotos/missao-terra/foto_10.png',
+      'fotos/missao-terra/image24.png', 'fotos/missao-terra/image1.png',
+      'fotos/missao-terra/image9.png',  'fotos/missao-terra/image19.png',
+      'fotos/missao-terra/image22.png',
     ],
     video: 'rjR0fw06h6U',
     cotas: [
@@ -296,9 +283,8 @@ export const PROJETOS = [
     bg: '#713f12',
     desc: 'Tabuleiro humano gigante com 5 atores representando figuras do trânsito. Jovens divididos em equipes respondem desafios sobre regras, segurança e cidadania. 90 minutos de duração, 60 participantes por intervenção.',
     fotos: [
-      'fotos/play-transito/foto_01.png', 'fotos/play-transito/foto_02.png',
-      'fotos/play-transito/foto_03.png', 'fotos/play-transito/foto_04.png',
-      'fotos/play-transito/foto_05.png', 'fotos/play-transito/foto_06.png',
+      'fotos/play-transito/image20.png', 'fotos/play-transito/image23.jpeg',
+      'fotos/play-transito/image25.png', 'fotos/play-transito/image26.jpeg',
     ],
     video: '9kUi47zkLYc',
     cotas: [
